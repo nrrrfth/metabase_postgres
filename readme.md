@@ -1,7 +1,7 @@
 # Setup Postgresql
-1. Perhatikan, apabila terdapat postgres dalam komputer/perangkat kamu, port 5432 sudah dipakai. Maka dari itu, ganti port selain 5432 (misal; 5433)
-2. Pada `docker-compose.yml`, berikan nilai `port` seperti ini `port : "port_baru:5432`
+1. Note, if there is postgres on your computer/device, port 5432 is already in use. Therefore, replace the port other than 5432 (for example; 5433)
+2. In `docker-compose.yml`, provide `port` value like this `port : “new_port:5432`
 
-# Setup Metabase
-1. Pada `docker-compose.yml`, `host_db_port` adalah `5432`, kecuali diluar docker. Seperti DBeaver yang akan membuka database postgre yang ada di docker. DBeaver kita akan kita arahkan menggunakan port `port_baru`
-1. Host database dikarenakan berada di docker lokal, maka pakai nama host `host.docker.internal`
+# Metabase Setup
+1. In `docker-compose.yml`, `host_db_port` is `5432`, unless outside of docker. As DBeaver will open the postgre database in docker. We will direct our DBeaver to use the `new_port` port
+1. Host database because it is in local docker, then use the host name `host.docker.internal`
